@@ -25,3 +25,15 @@ Or download an archive for macOS, Linux or Windows (amd64 and arm64) from the [r
 ## Docs
 
 Start with `hachi llms` and `hachi schema`, which ship inside the binary and always match it. More at [hachiflow.com](https://hachiflow.com).
+
+## Comments and decisions
+
+This is this repo's own rule, decided by Akeem Jenkins on 2026-11-15. It is
+not an outside standard.
+
+- The only comment allowed in source is a decision pointer: the comment
+  marker, a row id from [docs/adr.md](docs/adr.md), a colon and that row's
+  exact title, alone on its own line. Free-text comments are not written.
+- Only a person adds a row to `docs/adr.md`. An agent may propose one in a
+  pull request; a person confirms it.
+- There is no source in this repo, so no check runs here. The CLI's source lives in a private repo that runs the check.
